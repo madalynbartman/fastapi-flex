@@ -6,4 +6,3 @@ client = TestClient(app)
 def test_middleware():
     response = client.get("/")
     assert response.status_code == 404  # Assuming the root endpoint is not defined
-    # Add more assertions based on the middleware's behavior
